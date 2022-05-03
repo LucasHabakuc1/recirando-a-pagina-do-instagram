@@ -1,0 +1,165 @@
+* {
+padding: 3px;
+margin: 0;
+box-sizing: border-box;
+text-decoration: none;
+font-family: sans-serif;
+font-size: 14px;
+}
+
+body {
+width: 100%;
+max-height: 300vh;
+background-color: rgb(rgb(243, 243, 243));
+margin: 0;
+padding: 0;
+display: flex;
+justify-content: center;
+}
+
+.instagram-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    width: 80%;
+    height: 200vh;
+}
+
+.instagram-phone {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50%;
+}
+
+.instagram-phone img {
+    height: 34rem;
+}
+
+.instagram-continue {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: column;
+    width: 50%;
+    min-height: 34rem;
+}
+
+.grupo {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    background-color: rgb(238, 236, 236);
+    width: 100%;
+    padding: 1.3rem 0;
+    border: 2px solid rgba(68, 67, 67, 0.123);
+}
+
+.grupo:nth-child(1) {
+    min-width: 19rem;
+}
+
+.instagram-logo {
+    height: 4rem;
+}
+
+.profile-photo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 50%;
+    border-bottom: 10px;
+}
+
+.profile-photo img {
+    height: 6rem;
+    width: 6rem;
+    border-top-left-radius: 80px;
+    border-bottom-right-radius: 80px;
+    border-top-right-radius: 80px;
+    border-bottom-left-radius: 80px;
+}
+
+.instagram-loguin {
+    background-color: rgb(99, 99, 224);
+    color: black;
+    padding: 8px;
+    border-radius: 4px;
+}
+
+.instagram-logout {
+   color: rgb(99, 99, 224);
+   margin: 1rem;
+}
+
+.not-accout {
+    color: rgba(192, 192, 192, 0.459);
+}
+
+.link-blue {
+    color: aqua;
+}
+
+.get-the-app {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    border: 10px;
+    justify-content: baseline;
+}
+
+.download {
+    display: flex;
+    width: 70%;
+    height: 8px;
+    justify-content: space-between;
+}
+
+.app-download {
+    height: 4rem;
+    width: 10rem;
+    background-size: cover;
+
+}
+
+.app-download:nth-child(1) {
+    background-image: url('/imagens/icoPSL.png');
+}
+
+.app-download:nth-child(2) {
+    background-image: url('/imagens/IcoAPS.png');
+}
+
+/* redia querie */
+
+
+@media (max-width: 1080px) {
+    .instagram-wrapper {
+        width: 90%;
+    }
+}
+
+@media (max-width: 650px) {
+
+    boddy{
+        background-color: azure;
+    }
+
+    .instagram-wrapper {
+        width: 100%;
+    }
+    .instagram-phone {
+        display: none;
+        border-bottom: 10px;
+    }
+    .instagram-continue {
+        width: 100%;
+    }
+    .grupo {
+        border: 1px solid transparent;
+    }
+}
+
